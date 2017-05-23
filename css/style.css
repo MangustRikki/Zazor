@@ -1,0 +1,104 @@
+  /*задаем размеры и центрируем обертку*/
+
+  .wrapper {
+    width: 1000px;
+    height: 1310px;
+    margin: 0 auto;
+  }
+
+  /*задаем стили для верхней строчки с номерами телефонов, формой входа и блоком навигации*/
+
+  header {
+    height: 54px;
+    padding-left: 52px;
+    padding-right: 52px;
+    font-size: 0;
+  }
+
+  /*размещаем блоки горизонтально*/
+
+  .telephons,
+  .phone-numbers,
+  .authorization,
+  .authorization-icon,
+  .login,
+  .registartion,
+  .forget-password,
+  .navbar,
+  .home-link,
+  .site-map,
+  .write-letter {
+    display: inline-block;
+  }
+
+  .telephone-icon {
+    /*width: 21px;
+    height: 21px;*/
+    margin-top: 22px;
+    margin-right: 5px;
+  }
+
+  .phone-numbers {
+    width: 264px;
+    height: 17px;
+    margin-top: 26px;
+    margin-right: 17px;
+    color: #5e696d;
+    font-family: Arial;
+    font-size: 18px;
+  }
+
+  .authorization {
+    width: 495px;
+    height: 26px;
+    margin-top: 18px;
+    box-shadow: 2px 3px 3px rgba(150, 150, 150, 0.75);
+    border-radius: 3px;
+    background-color: #b1bcc0;
+    background: linear-gradient(to top, #033057, #196788);
+  }
+
+  .authorization-icon {
+    width: 14px;
+    height: 18px;
+    margin-top: 4px;
+    margin-left: 7px;
+    margin-right: 3px;
+
+  }
+
+  .login {
+    height: 26px;
+    vertical-align: top;
+  }
+
+  input[type=text],
+  input[type=password] {
+    width: 115px;
+    height: 18px;
+    margin-top: 3px;
+    color: #97a2a6;
+    font-family: "Lucida Sans Unicode";
+    font-size: 11px;
+    box-sizing: border-box;
+    border: 1px solid #9ba1a3;
+  }
+
+  input[type=text] {
+    margin-right: 6px;
+  }
+
+  input[type=password] {
+    margin-right: 6px;
+  }
+
+  input[type=submit] {
+    height: 100%;
+    display: inline-block;
+    background: rgba(0, 0, 0, 0);
+    border: 0;
+    color: #ffffff;
+    font-family: "Lucida Sans Unicode";
+    font-size: 11px;
+    cursor: pointer;
+  }
