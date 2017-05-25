@@ -1,11 +1,7 @@
   @font-face {
   font-family: "Lucida Sans Unicode";
-  src: url(../fonts/lsansuni-webfont.eot);
-  src: url(../fonts/lsansuni-webfont.eot?#iefix) format('embedded-opentype'),
-       url(../fonts/lsansuni-webfont.woff2) format('woff2'),
+  src: url(../fonts/lsansuni-webfont.woff2) format('woff2'),
        url(../fonts/lsansuni-webfont.woff) format('woff');
-  font-weight: normal;
-  font-style: normal;
   }
 
   /*задаем размеры и центрируем обертку*/
@@ -52,7 +48,7 @@
   }
 
   .phone-numbers {
-    margin-right: 15px;
+    margin-right: 18px;
     padding-bottom: 2px;
     color: #5e696d;
     font-family: Arial;
@@ -60,9 +56,9 @@
   }
 
   .authorization {
-    width: 495px;
-    height: 26px;
-    margin-top: 27px;
+    width: 494px;
+    height: 25px;
+    margin-top: 30px;
     box-shadow: 2px 3px 3px rgba(150, 150, 150, 0.75);
     border-radius: 3px;
     background-color: #b1bcc0;
@@ -72,11 +68,11 @@
 
 
   .authorization-icon {
-    width: 14px;
+    width: 15px;
     height: 18px;
     margin-top: 5px;
-    margin-left: 7px;
-    margin-right: 3px;
+    margin-left: 6px;
+    margin-right: 2px;
     background: url(../img/authorization-icon.png) no-repeat;
   }
 
@@ -90,33 +86,35 @@
   input[type=password] {
     width: 114px;
     height: 18px;
-    padding-left: 5px;
-    padding-bottom: 1px;
+    margin-top: 4px;
+    padding-left: 6px;
+    padding-bottom: 3px;
     color: #97a2a6;
     font-family: "Lucida Sans Unicode";
-    font-size: 11px;
+    font-size: 10px;
     box-sizing: border-box;
     border: 1px solid #9ba1a3;
   }
 
   input[type=text] {
-    margin-right: 7px;
+    margin-right: 6px;
   }
 
   input[type=password] {
-    margin-right: 3px;
+    margin-right: 4px;
   }
 
   input[type=submit] {
     display: inline-block;
     height: 100%;
-    padding-top: 3px;
-    padding-right: 5px;
+    padding-top: 1px;
+    padding-right: 6px;
     background: rgba(0, 0, 0, 0);
     border: 0;
     color: #ffffff;
     font-family: "Lucida Sans Unicode";
-    font-size: 11px;
+    font-size: 10px;
+    vertical-align: top;
     cursor: pointer;
   }
 
@@ -124,7 +122,7 @@
     content: ".";
     position: absolute;
     display: inline-block;
-    top: 10px;
+    top: 8px;
     width: 1px;
     height: 10px;
     background-color: #fff;
@@ -132,19 +130,18 @@
 
   .registration {
     height: 100%;
-    margin-left: 5px;
-    padding-top: 2px;
+    margin-left: 6px;
     color: #ffffff;
-    font-family: "Lucida Sans Unicode", Arial;
-    font-size: 11px;
+    font-family: "Lucida Sans Unicode";
+    font-size: 10px;
     line-height: 26px;
     text-decoration: none;
     vertical-align: top;
   }
 
   .forget-password {
-    margin-left: 18px;
-    padding-top: 2px;
+    margin-left: 24px;
+    padding-top: 1px;
     color: #bfbfbf;
     font-family: "Lucida Sans Unicode";
     font-size: 12px;
@@ -155,8 +152,8 @@
   .container-navbar {
     display: inline-block;
     height: 21px;
-    margin-top: 30px;
-    margin-left: 19px;
+    margin-top: 31px;
+    margin-left: 17px;
     vertical-align: top;
   }
 
