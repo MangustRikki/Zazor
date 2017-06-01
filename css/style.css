@@ -1,9 +1,10 @@
   @font-face {
-  font-family: "Lucida Sans Unicode";
-  src: url(../fonts/lsansuni-webfont.woff2) format('woff2'),
-       url(../fonts/lsansuni-webfont.woff) format('woff');
+    font-family: "Lucida Sans Unicode";
+    src: url(../fonts/23911_lsansuni-webfont.eot);
+    src: url(../fonts/23911_lsansuni-webfont.eot?#iefix) format(embedded-opentype), url(../fonts/23911_lsansuni-webfont.woff2) format(woff2), url(../fonts/23911_lsansuni-webfont.woff) format(woff);
+    font-weight: normal;
+    font-style: normal;
   }
-
   /*задаем размеры и центрируем обертку*/
 
   .wrapper {
@@ -11,7 +12,6 @@
     height: 1310px;
     margin: 0 auto;
   }
-
   /*задаем стили для верхней строчки с номерами телефонов, формой входа и блоком навигации*/
 
   header {
@@ -20,21 +20,9 @@
     padding-right: 51px;
     font-size: 0;
   }
-
   /*размещаем блоки горизонтально*/
 
-  .telephons,
-  .telephone-icon,
-  .phone-numbers,
-  .authorization,
-  .authorization-icon,
-  .login,
-  .registration,
-  .forget-password,
-  .navbar,
-  .home-link,
-  .site-map,
-  .write-letter {
+  .telephons, .telephone-icon, .phone-numbers, .authorization, .authorization-icon, .login, .registration, .forget-password, .navbar, .home-link, .site-map, .write-letter {
     display: inline-block;
   }
 
@@ -64,8 +52,7 @@
     background-color: #b1bcc0;
     background: linear-gradient(to top, #033057, #196788);
     vertical-align: top;
-}
-
+  }
 
   .authorization-icon {
     width: 15px;
@@ -82,8 +69,7 @@
     vertical-align: top;
   }
 
-  input[type=text],
-  input[type=password] {
+  input[type=text], input[type=password] {
     width: 114px;
     height: 18px;
     margin-top: 4px;
@@ -131,6 +117,7 @@
   .registration {
     height: 100%;
     margin-left: 6px;
+    margin-top: 1px;
     color: #ffffff;
     font-family: "Lucida Sans Unicode";
     font-size: 10px;
@@ -162,16 +149,14 @@
     height: 21px;
     border: 1px solid #bdc4c7;
     border-radius: 20px;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
     background-color: #ffffff;
     box-sizing: border-box;
     vertical-align: top;
   }
-
   /*#navbar оформление ссылок в виде пиктограмок */
 
-  .home-link,
-  .site-map,
-  .write-letter {
+  .home-link, .site-map, .write-letter {
     height: 100%;
     width: 33%;
   }
@@ -186,4 +171,739 @@
 
   .write-letter {
     background: url(../img/letter.png) right 11px top 4px no-repeat;
+  }
+  /*div для размещения главной картинки*/
+
+  .main-photo {
+    width: 909px;
+    height: 237px;
+    margin-top: 10px;
+    margin-left: 45px;
+    background: url(../img/main-picture.png) center center no-repeat;
+    overflow: hidden;
+  }
+
+  /*криво сделанная ссылка на главном фото*/
+
+  .company-name {
+    display: block;
+    height: 120px;
+    margin-top: 50px;
+    width: 265px;
+    opacity: 0;
+  }
+
+  /*оформление главного меню*/
+
+  .menu {
+    width: 912px;
+    height: 34px;
+    margin-top: 6px;
+    margin-left: 44px;
+    font-size: 0;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.75);
+    border-radius: 4px;
+    border: 1px solid #0d1642;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    background-image: linear-gradient(to top, #000000 0%, #576068 100%);
+  }
+
+  .main-menu {
+    display: inline-block;
+    height: 34px;
+    margin-left: 105px;
+  }
+
+  .menu-item {
+    display: inline-block;
+  }
+
+  .menu-link {
+    display: inline-block;
+    height: 34px;
+    color: #b1bcc0;
+    font-family: "Lucida Sans Unicode";
+    font-size: 14px;
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 34px;
+  }
+
+  .menu-link:hover {
+    height: 26px;
+    color: #b1bcc0;
+    border-radius: 15px;
+    background-color: #f60303;
+    background-image: linear-gradient(180deg, #206988 0%, #114165 59%, #0c3256 100%);
+    line-height: 26px;
+  }
+
+  .menu-link:first-child {
+    padding-left: 21px;
+  }
+
+  .menu-link {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .products-amount {
+    width: 75px;
+    margin-left: 35px;
+    padding-left: 25px;
+    padding-top: 8px;
+    background: url(../img/basket-icon.png) left top 5px no-repeat;
+  }
+
+  .money-amount {
+    padding-top: 8px;
+  }
+
+  .products-amount, .money-amount {
+    display: inline-block;
+    height: 100%;
+    color: #929b9f;
+    font-family: Arial;
+    font-size: 11px;
+    text-decoration: none;
+    vertical-align: top;
+  }
+
+  .products-amount-item, .money-amount-item {
+    color: #0d5a8f;
+    font-family: Arial;
+    font-size: 12px;
+  }
+
+  .search-car-form div {
+    display: inline-block;
+  }
+
+  .search-car-form option {
+    font-family: Arial;
+    font-size: 10px;
+  }
+
+  .search-car-form {
+    display: block;
+    float: left;
+    width: 415px;
+    height: 134px;
+    margin-left: 49px;
+    margin-top: 12px;
+    box-sizing: border-box;
+    /*font-size: 0;*/
+    box-shadow: 3px 4px 5px rgba(104, 104, 104, 0.75);
+    border-radius: 17px;
+    border: 1px solid #9c9c9d;
+  }
+
+  .disks, .search-car, .tires {
+    box-sizing: border-box;
+    font-family: Arial;
+    font-weight: 900;
+    vertical-align: top;
+  }
+
+  .disks {
+    width: 30%;
+    padding-left: 16px;
+    color: #154468;
+    font-size: 10px;
+    text-align: left;
+  }
+
+  .search-car {
+    color: #154467;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .tires {
+    width: 30%;
+    padding-right: 18px;
+    color: #154468;
+    font-size: 10px;
+    text-align: right;
+  }
+
+  .disks-car-brand, .tires-car-brand, .disks-car-model, .tires-car-model, .disks-year-production, .tires-year-production, .disks-equipment, .tires-equipment {
+    width: 176px;
+    height: 17px;
+  }
+
+  .disks-car-model, .tires-car-model, .disks-equipment, .tires-equipment {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .disks-car-brand, .disks-car-model, .disks-equipment {
+    margin-left: 18px;
+    margin-right: 26px;
+  }
+
+  .disks-car-brand-select, .tires-car-brand-select, .disks-car-model-select, .tires-car-model-select, .disks-equipment-select, .tires-equipment-select {
+    width: 101px;
+  }
+
+  .search-car-form select {
+    width: 101px;
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.75);
+  }
+
+  .search-car-form .disks-year-production-select, .search-car-form .tires-year-production-select {
+    width: 57px;
+    height: 17px;
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.75);
+    box-sizing: border-box;
+  }
+
+  .disks-car-brand-select, .tires-car-brand-select {
+    margin-left: 17px;
+  }
+
+  .disks-car-model-select {
+    margin-left: 13px;
+  }
+
+  .tires-car-model-select {
+    margin-left: 13px;
+  }
+
+  .black-font {
+    font-family: Arial;
+    color: #000000;
+    font-size: 10px;
+  }
+
+  .grey-font {
+    font-family: Arial;
+    color: #77858b;
+    font-size: 8px;
+  }
+
+  .two-lines {
+    width: 56px;
+    height: 15px;
+    line-height: 7px;
+  }
+
+  .tires-year-production .two-lines span::after, .disks-year-production .two-lines span::after {
+    display: inline-block;
+    content: "автомобиля";
+    font-family: Arial;
+    color: #77858b;
+    font-size: 8px;
+  }
+
+  .disks-year-production {
+    margin-right: 8px;
+  }
+
+  .disks-year-production .two-lines, .tires-year-production .two-lines {
+    width: 63px;
+    margin-right: 6px;
+  }
+
+  .disks-year-production, .tires-year-production {
+    margin-left: 18px;
+  }
+
+  .disks-equipment-select, .tires-equipment-select {
+    margin-left: 1px;
+  }
+
+  .search-car-form input[type=submit] {
+    display: inline-block;
+    height: 18px;
+    margin-left: 343px;
+    color: #154467;
+    font-family: Arial;
+    font-size: 14px;
+    font-style: italic;
+    text-decoration: underline;
+  }
+
+  .search-tires-form {
+    width: 193px;
+    height: 134px;
+    display: block;
+    float: left;
+    margin-left: 14px;
+    margin-top: 12px;
+    box-shadow: 3px 4px 5px rgba(150, 150, 150, 0.75);
+    border-radius: 17px;
+    border: 1px solid #9c9c9d;
+    background-color: #ffffff;
+  }
+
+  .search-tires-form .black-font {
+    font-family: "Lucida Sans Unicode";
+  }
+
+  .search-tires {
+    height: 7px;
+    margin: 0 0 7px 11px;
+    color: #114165;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: 900;
+  }
+
+  .tires-size {
+    width: 164px;
+    height: 14px;
+    margin-left: 14px;
+    margin-bottom: 7px;
+  }
+
+  .first-size-parametr, .second-size-parametr {
+    width: 51px;
+  }
+  /*стиль выпадающих окнах */
+
+  .search-tires-form select {
+    color: #000;
+    font-family: Arial;
+    font-size: 11px;
+    height: 17px;
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.75);
+  }
+
+  .slash {
+    color: #000;
+    font-family: Arial;
+    font-size: 14px;
+  }
+
+  .tires-radius {
+    margin-left: 43px;
+  }
+
+  .tires-radius-select {
+    width: 45px;
+  }
+
+  .season-checkbox {
+    display: inline-block;
+  }
+
+  .tires-season {
+    margin-left: 14px;
+  }
+
+  .tires-season .black-font {
+    vertical-align: top;
+  }
+
+  .summer span, .winter span, .all-season span {
+    color: #000;
+    font-family: "Lucida Sans Unicode";
+    font-size: 10px;
+    vertical-align: middle;
+  }
+
+  .search-tires-form .tires-season input[type=checkbox] {
+    width: 9px;
+    height: 10px;
+  }
+
+  .search-tires-form input[type=submit] {
+    height: 18px;
+    margin-left: 123px;
+    color: #154467;
+    font-family: Arial;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 20px;
+    text-decoration: underline;
+  }
+
+  .search-disks-form {
+    position: relative;
+    width: 268px;
+    height: 134px;
+    float: left;
+    margin-left: 14px;
+    margin-top: 12px;
+    box-shadow: 3px 4px 5px rgba(150, 150, 150, 0.75);
+    border-radius: 14px;
+    border: 1px solid #9c9c9d;
+  }
+
+  .search-disks-form .black-font {
+    font-family: "Lucida Sans Unicode";
+  }
+
+  .search-disks-form .grey-font {
+    color: #77858b;
+    font-size: 9px;
+  }
+
+  .search-disks-form select {
+    height: 16px;
+    color: #000000;
+    font-family: Arial;
+    font-size: 11px;
+    box-shadow: inset 1px 1px 1px rgba(0, 0, 0, 0.75);
+  }
+
+  .search-disks {
+    margin-left: 10px;
+    color: #114165;
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: 900;
+  }
+
+  .disks-parametrs, .another-parametrs {
+    display: inline-block;
+  }
+
+  .disks-diametr, .amount-fastening-holes, .diametr-fastening-holes {
+    margin-left: 16px;
+  }
+
+  .disks-diametr {
+    margin-top: 10px;
+    margin-bottom: 6px;
+  }
+
+  .disks-diametr .black-font::after {
+    content: "диска:";
+    display: inline-block;
+    margin-left: 3px;
+    font-family: "Lucida Sans Unicode";
+    color: #77858b;
+    font-size: 9px;
+  }
+
+  .disks-diametr-select, .diametr-fastening-holes-select {
+    width: 57px;
+  }
+
+  .amount-fastening-holes {
+    height: 27px;
+  }
+
+  .amount-fastening-holes .two-lines {
+    display: inline-block;
+    width: 63px;
+    height: 27px;
+    margin-right: 13px;
+  }
+
+  .amount-fastening-holes-select {
+    width: 51px;
+    vertical-align: top;
+    margin-top: 5px;
+  }
+
+  .diametr-fastening-holes .two-lines {
+    display: inline-block;
+    margin-right: 20px;
+  }
+
+  .diametr-fastening-holes-select {
+    vertical-align: top;
+    margin-top: 5px;
+  }
+
+  .another-parametrs::before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 106px;
+    top: 5px;
+    left: 165px;
+    background-color: rgb(189, 198, 202);
+  }
+
+  .another-parametrs {
+    vertical-align: top;
+    margin-left: 25px;
+    margin-top: -9px;
+  }
+
+  .another-parametrs .two-lines {
+    height: 33px;
+  }
+
+  .another-parametrs .black-font {
+    text-transform: uppercase;
+  }
+
+  .diametr-central-hole-select, .disks-et-select {
+    width: 57px;
+    vertical-align: top;
+  }
+
+  .disks-et .two-lines {
+    height: 16px;
+    margin-top: 4px;
+    margin-bottom: 8px;
+  }
+
+  .search-disks-form input[type=submit] {
+    height: 18px;
+    margin-left: 198px;
+    color: #154467;
+    font-family: Arial;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 20px;
+    text-decoration: underline;
+  }
+
+  section {
+    clear: both;
+    width: 100%;
+    height: 627px;
+    padding-top: 14px;
+    margin-left: 44px;
+    margin-right: 46px;
+  }
+
+  aside, .main-section, .brands-search {
+    float: left;
+  }
+
+  aside {
+    width: 192px;
+  }
+
+  .product-catalog, .brands {
+    width: 185px;
+    height: 29px;
+    margin-bottom: 13px;
+    box-shadow: 2px 3px 3px rgba(150, 150, 150, 0.75);
+    border: 1px solid #79878d;
+    border-radius: 14px;
+    box-sizing: border-box;
+  }
+
+  .caption {
+    display: inline-block;
+    vertical-align: top;
+    font-family: "Lucida Sans Unicode";
+    font-size: 13px;
+    line-height: 29px;
+    text-transform: uppercase;
+    color: #114165;
+  }
+
+  .icon-product-catalog {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 3px 0 4px 4px;
+    border-radius: 50%;
+    background: url(../img/icon-product-catalog.png) center center no-repeat, linear-gradient(to top, rgb(21, 62, 98), rgb(25, 103, 135));
+  }
+
+  .tires-catalog-caption, .disks-catalog-caption, .bolts-catalog-caption {
+    width: 152px;
+    height: 30px;
+    border: 1px solid #79878d;
+    box-sizing: border-box;
+    border-radius: 14px;
+  }
+
+  .icon-catalog {
+    position: relative;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
+    margin: 3px 0 3px 5px;
+    background: rgb(8, 63, 101);
+    border-radius: 50%;
+  }
+
+  .white-circle {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    border-radius: 50%;
+  }
+
+  aside li {
+    margin-left: 29px;
+    list-style-type: circle;
+  }
+
+  aside li a {
+    color: #465961;
+    font-family: "Lucida Sans Unicode";
+    font-size: 13px;
+    text-decoration: none;
+    line-height: 28px;
+  }
+
+  aside a:hover {
+    color: #0c3256;
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration: underline;
+    transition: 0.1s;
+  }
+
+  .main-section {
+    width: 526px;
+    height: 627px;
+    border-radius: 2px;
+    background-image: linear-gradient(to top, rgba(35, 75, 93, 0.49) 0%, rgba(201, 207, 209, 0.49) 100%);
+  }
+
+  .products-link {
+    display: inline-block;
+    width: 138px;
+    margin: 15px 6px 9px 23px;
+    text-decoration: none;
+  }
+
+  .manufacturer-name, .product-name {
+    font-family: "Lucida Sans Unicode";
+    line-height: 13px;
+    text-align: center;
+  }
+
+  .manufacturer-name {
+    color: #206988;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .product-name {
+    color: #1f2528;
+    font-size: 13px;
+  }
+
+  .product-img-goodyear, .product-img-nokian, .product-img-hankook {
+    width: 138px;
+    height: 129px;
+    border-radius: 7px;
+    border: 1px solid #a4aeb1;
+    background-color: #ffffff;
+  }
+
+  .product-img-goodyear {
+    background: url(../img/goodyear.png) center center no-repeat, #ffffff;
+  }
+
+  .product-img-nokian {
+    background: url(../img/nokian.png) center center no-repeat, #ffffff;
+  }
+
+  .product-img-hankook {
+    background: url(../img/hankook.png) center center no-repeat, #ffffff;
+  }
+
+  .price {
+    margin-top: 5px;
+    color: #114165;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+  }
+
+  .currency {
+    color: #1f2528;
+    font-size: 13px;
+  }
+
+  .brands {
+    margin-left: 9px;
+  }
+
+  .brands-search .tires-catalog-caption, .brands-search .disks-catalog-caption {
+    margin-left: 24px;
+  }
+
+  .brands-search label {
+    display: block;
+    margin-left: 35px;
+    color: #465961;
+    font-family: "Lucida Sans Unicode";
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 25px;
+  }
+
+  .brands-search input[type=checkbox] {
+    width: 9px;
+    height: 10px;
+    border: 1px solid #114165;
+  }
+
+  .tires-disks-brands input[type=submit] {
+    width: 82px;
+    height: 26px;
+    margin-left: 33px;
+    margin-top: 20px;
+    border-radius: 13px;
+    border: 1px solid #a7abae;
+    background-color: #000000;
+    background-image: linear-gradient(180deg, #206988 0%, #114165 59%, #0c3256 100%);
+  }
+
+  .brands-img {
+    margin: 41px auto 34px;
+    text-align: center;
+  }
+
+  footer {
+    width: 910px;
+height: 100px;
+margin: 0 auto;
+border: 1px solid #242a3c;
+background: #1b384c;
+text-align: center;
+  }
+
+  .footer-menu {
+    margin: 13px auto 16px;
+    font-size: 0;
+  }
+
+  .footer-menu-item,
+  .footer-menu-link {
+    display: inline-block;
+    height: 100%;
+  }
+
+  .footer-menu-item {
+    border-right: 1px solid #bec6c9 ;
+  }
+
+  .footer-menu-item:last-child {
+    border: none;
+  }
+
+  .footer-menu-link {
+    padding-right: 12px;
+    padding-left: 12px;
+    font-family: Arial;
+font-size: 12px;
+color: #bec6c9;
+text-decoration: none;
+  }
+  .footer-menu-link:hover {
+    color: #52abcb;
+    transition: 0.2s;
+  }
+
+  .site-creator {
+    display: inline-block;
+    color: #7f4740;
+font-family: Arial;
+font-size: 10px;
+line-height: 18px;
   }
